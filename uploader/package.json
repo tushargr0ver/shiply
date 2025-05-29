@@ -1,0 +1,17 @@
+{
+  "name": "uploader",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "cors": "^2.8.5",
+    "hono": "^4.7.10",
+    "random-word-slugs": "^0.1.7",
+    "redis": "^5.1.1",
+    "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

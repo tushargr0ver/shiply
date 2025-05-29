@@ -1,0 +1,16 @@
+{
+  "name": "deployer",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "redis": "^5.1.1"
+  }
+}

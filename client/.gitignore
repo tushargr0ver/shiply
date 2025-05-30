@@ -1,0 +1,49 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+dist/
+
+# Testing
+coverage/
+*.lcov
+
+# Logs
+logs/
+*.log
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Optional: Ignore IDE/editor folders
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional: Ignore generated types (if using tRPC or GraphQL codegen)
+generated/

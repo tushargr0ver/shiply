@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 import { ContentfulStatusCode } from 'hono/utils/http-status'
 
 const app = new Hono()
-const PORT = 3001
+const PORT = 8001
 
 const BASE_S3 = 'https://shiply-outputs.s3.ap-south-1.amazonaws.com/dist'
 

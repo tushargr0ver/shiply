@@ -17,7 +17,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 
 export async function mockUpload(gitUrl: string): Promise<{ deploymentId: string }> {
-  const response = await fetch('http://localhost:8000/upload', {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/upload`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -58,14 +58,14 @@ export async function mockGetStatus(deploymentId: string): Promise<{ status: Dep
   let deployedUrl = deployment.deployedUrl
 
   
-    const response = await fetch(`http://localhost:8000/status?id=${deploymentId}`)
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/status?id=${deploymentId}`)
     const data = await response.json()
     newStatus = data.status as DeploymentStatus
 
 
   if (newStatus === "deployed") {
     
-    deployedUrl = `${deploymentId}.localhost:8001`
+    deployedUrl = `${deploymentId}.goshiply.xyz`
 
   }
 
